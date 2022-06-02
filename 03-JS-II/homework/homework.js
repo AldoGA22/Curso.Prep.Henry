@@ -33,7 +33,16 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if ( status == 1 ){
+    console.log ("Online");
+     }
+  else if(status==2){
+    console.log("Away");
+
+  }else { console.log("Offline");
 }
+}
+conection (1);
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -42,7 +51,22 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+     if (idioma == "aleman"){
+          console.log("Guten Tag!");
+        } 
+   else if(idioma == "mandarin"){
+           console.log("Ni Hao");
+        }   
+        else if(idioma == "ingles"){
+          console.log("Hello!");
+        }
+           else {console.log("Hola!");
+      }
 }
+saludo("ingles");
+
+
+
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -52,14 +76,35 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+
+  switch (color) {
+    case "blue" :
+      console.log("This is Blue");
+      break;
+    case "red" :
+      console.log("This is Red");
+      break;
+    case "green" :
+      console.log("This is green");
+      break;
+    case "orange" :
+      console.log("This is orange");
+      break;
+      default:
+        console.log("color not found");
+  }
 }
+colors("default");
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero == 10 || numero == 5){
+    console.log("True");
+    } else console.log("false")
 }
-
+esDiezOCinco(10);
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
