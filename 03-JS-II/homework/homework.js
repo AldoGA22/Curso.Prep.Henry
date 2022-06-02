@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { nuevaMultiplicacion } = require("../../02-JS-I/homework/homework");
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -102,14 +104,19 @@ function esDiezOCinco(numero) {
   // Tu código:
   if (numero == 10 || numero == 5){
     console.log("True");
-    } else console.log("false")
+    } else console.log("false");
 }
 esDiezOCinco(10);
+
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero >20  &&  numero < 50){
+      console.log("true");
+    } else console.log("false");
 }
+estaEnRango(40);
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
