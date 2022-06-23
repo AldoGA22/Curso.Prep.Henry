@@ -10,7 +10,7 @@ const nuevoNum = 50;
 const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 null === 5 ;
+const nuevaResta = 10 - 5 === 5 ;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
@@ -76,7 +76,6 @@ function sonIguales(x, y) {
     return false;
   }
 }
-return false;
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
@@ -192,7 +191,7 @@ function esPositivo(numero) {
   }else if(num>0){return "Es positivo"}
   else { return "Es Negativo"}
   }
-}
+
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
